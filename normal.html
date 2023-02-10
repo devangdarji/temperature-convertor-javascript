@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temp convertor</title>
+    <link rel="stylesheet" href="css.css" type="text/css">
+</head>
+<body>
+    <form id='container' class="container" onsubmit="calculate(); return false">
+
+        <h3>&#127777 <span>Temperature convertor</span> &#127777</h3>
+
+        <label id="joke">convert temp</label>
+
+        <input type="number" id="temp" name="temp">
+        <lable> to </lable>
+        <select id="tempdiff" name="tempdiff">
+            <option value="" name="option">choose</option>
+            <option value="celc" name="℃">℃elcious</option>
+            <option value="fer" name="℉">℉eronhit</option>
+        </select>
+        <div id="res"></div>
+        <br><input type="submit" name="submit">
+
+        
+    </form>
+
+    <!-- <div class="sym" style="font-size:200px;display:inline;color: red;">&#127777</div>
+    <div class="sy" style="font-size:200px;display:inline;">&#127756</div>
+    <div class="sy" style="font-size:200px;display:inline;">&#127752</div> -->
+    <script src="js.js"></script>
+</body>
+</html>
