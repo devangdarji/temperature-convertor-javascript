@@ -1,7 +1,7 @@
 let celvalue=document.getElementById("cel");
 let fervalue=document.getElementById("fer");
 
-celvalue.addEventListener('change',()=>{
+celvalue.addEventListener('input',()=>{
     console.log(celvalue.value);
     let finalfervalue=celvalue.value;
     finalfervalue=((finalfervalue*(9/5))+32);
@@ -9,7 +9,7 @@ celvalue.addEventListener('change',()=>{
     fervalue.value=finalfervalue;
 })
 
-fervalue.addEventListener('change',()=>{
+fervalue.addEventListener('input',()=>{
     console.log(fervalue.value);
     let finalcelvalue=fervalue.value;
     finalcelvalue=((finalcelvalue-32)*(5/9));
